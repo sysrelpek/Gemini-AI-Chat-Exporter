@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "GemAI Chat Exporter",
+  "version": "1.0",
+  "description": "Exports your current Google Gemini AI chat session to Markdown.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://gemini.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
