@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "GemAI Chat Exporter",
+  "name": "Gemini AI Chat Exporter",
   "version": "1.0",
-  "description": "Exports your current Google Gemini AI chat session to Markdown.",
+  "description": "Export Gemini chats to structured Markdown, HTML, Text, and JSON.",
   "permissions": [
     "activeTab"
   ],
@@ -17,5 +17,10 @@
       "matches": ["https://gemini.google.com/*"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "gemini-exporter@myself.local"
+    }
+  }
 }
