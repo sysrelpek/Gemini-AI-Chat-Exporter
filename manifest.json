@@ -20,7 +20,10 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "gemini-exporter@myself.local"
+      "id": "gemini-exporter@myself.local",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
